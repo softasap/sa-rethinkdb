@@ -1,0 +1,25 @@
+---
+  - name: RethinkDB | Install dependencies
+    apt: pkg=python-pycurl state=installed
+    become: yes
+    tags:
+      - rethinkdb
+
+  - name: RethinkDB | Add GPG key to apt keyring
+    apt_key: url=https://packagecloud.io/gpg.key  state=present
+    become: yes
+    tags:
+      - rethinkdb
+
+  - name: RethinkDB | Add apt repository
+    apt_repository: repo="deb http://download.rethinkdb.com/apt {{ansible_distribution}} main" state=present update_cache=yes
+    become: yes
+    tags:
+      - rethinkdb
+
+  - name: RethinkDB | Install
+    apt: update-cache=yes pkg=rethinkdb state=latest
+    become: yes
+    tags:
+      - rethinkdb
+

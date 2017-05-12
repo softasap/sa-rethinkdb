@@ -1,0 +1,3 @@
+[submodule "roles/sa-rethinkdb"]
+        path = roles/sa-rethinkdb
+        url = https://github.com/softasap/sa-rethinkdb.git
