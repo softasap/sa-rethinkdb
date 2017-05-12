@@ -3,8 +3,10 @@
 
 [![Build Status](https://travis-ci.org/softasap/sa-rethinkdb.svg?branch=master)](https://travis-ci.org/softasap/sa-rethinkdb)
 
+Important: original company abandoned project, and it is supported by community now. Checkout https://www.joyent.com/blog/the-liberation-of-rethinkdb
 
-#Usage:
+
+# Usage:
 
 Simple:
 
@@ -40,7 +42,7 @@ If you installed the sa-rethinkdb role using the command
    ansible-galaxy install softasap.sa-rethinkdb
 `
 
-the role will be available in the folder library/softasap.sa-mailhog
+the role will be available in the folder library/softasap.sa-rethinkdb
 Please adjust the path accordingly.
 
 ```YAML
