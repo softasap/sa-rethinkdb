@@ -6,7 +6,7 @@
       - rethinkdb
 
   - name: RethinkDB | Add GPG key to apt keyring
-    apt_key: url=https://packagecloud.io/gpg.key  state=present
+    apt_key: url=https://download.rethinkdb.com/apt/pubkey.gpg  state=present
     become: yes
     tags:
       - rethinkdb
