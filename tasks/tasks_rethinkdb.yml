@@ -12,7 +12,7 @@
       - rethinkdb
 
   - name: RethinkDB | Add apt repository
-    apt_repository: repo="deb http://download.rethinkdb.com/apt {{ansible_distribution}} main" state=present update_cache=yes
+    apt_repository: repo="deb http://download.rethinkdb.com/apt {{ansible_distribution_release}} main" state=present update_cache=yes
     become: yes
     tags:
       - rethinkdb
